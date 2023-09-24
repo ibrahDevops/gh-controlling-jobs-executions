@@ -1,5 +1,7 @@
 name: Reusable Deploy
-on: ...
+
+on: workflow_call
+
 jobs:
     deploy:
         runs-on: ubuntu-latest

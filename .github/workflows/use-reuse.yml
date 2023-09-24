@@ -1,4 +1,4 @@
-name: Use reusable workflow
+name: Using reusable workflow
 on:
   push:
     branches:
@@ -70,7 +70,7 @@ jobs:
           path: dist
   deploy:
     needs: build
-    uses: ./.github/workflows/reusable.yml@master
+    uses: ./.github/workflows/reusable.yml
 
   report:
     needs: [lint, deploy]
